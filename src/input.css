@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.FF_Balsamiq {
+    font-family: "Balsamiq Sans", sans-serif !important;
+}
+
+.FF_Dela {
+    font-family: "Dela Gothic One", sans-serif !important;
+}
+
+.show {
+    right: 0 !important;
+}
+
+.bg-img {
+    height: 1100px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("../dist/images/sec-1-bg-img.png");
+}
+
+.Nav_Box {
+    width: 1188px;
+    height: 90px;
+    border-radius: 90px;
+    background-color: #FFFFFF;
+    border: 1px solid #000000;
+}
+
+.Contact {
+    width: 130px;
+    height: 43px;
+    border-radius: 107px;
+    background-color: #FFFFFF;
+    border: 1px solid #0F2440;
+    padding: 12px 24px 12px 24px;
+    box-shadow: 3px 3px 0px 0px #0F2440;
+}
+
+.sec-img-1 {
+    top: 65%;
+}
+
+.sec-img-2 {
+    top: 84%;
+}
+
+.sec-img-3 {
+    top: 83%;
+}
+
+.Man-m-w {
+    max-width: 450px;
+    max-height: 432px;
+}
+
+.cirle-img-m-w {
+    max-width: 548.56px;
+    max-height: 501px;
+}
+
+.Box_1 {
+    width: 501px;
+    height: 242px;
+    padding: 20px;
+    border-radius: 20px;
+    background: #DF4741;
+    border: 1px solid #FFFFFF80;
+    box-shadow: 0px 5px 18px 0px #00000061;
+}
+
+::-webkit-scrollbar {
+    width: 4px;
+    height: 31px !important;
+}
+
+::-webkit-scrollbar-track {
+    background: #FFAEAB;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #DF4741;
+}
+
+.bg-Conclusion {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("../dist/images/webp/background-img.webp");
+}
+
+.before\:h-full::before {
+    height: 225% !important;
+}
+
+img,
+video {
+    max-width: 109% !important;
+}

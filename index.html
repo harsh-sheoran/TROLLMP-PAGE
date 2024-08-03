@@ -1,0 +1,776 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/input.css">
+    <link rel="stylesheet" href="./src/output.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <section class="bg-img relative">
+        <div class="pt-[24px]">  
+            <div class="max-w-[1188px] px-5 py-5 mx-auto">
+                <div class="Nav_Box max-w-[100%]">
+                    <nav class="flex items-center justify-between py-[22px] px-[55px]">
+                        <img src="./dist/images/Page.Logo.png" alt="Page.Logo" class="cursor-pointer">
+                        <ul
+                            class="flex items-center justify-center gap-[28px] max-lg:fixed max-lg:w-screen max-lg:h-screen max-lg:top-0 max-lg:right-[-100%] max-lg:flex-col max-lg:justify-center max-lg:bg-white menulist z-20">
+                            <li><a href="#"
+                                    class="text-[16px] font-normal FF_Balsamiq text-[#666666] hover:text-black">Home</a>
+                            </li>
+                            <li><a href="#"
+                                    class="text-[16px] font-normal FF_Balsamiq text-[#666666] hover:text-black">Tokenomics</a>
+                            </li>
+                            <li><a href="#"
+                                    class="text-[16px] font-normal FF_Balsamiq text-[#666666] hover:text-black">Roadmap</a>
+                            </li>
+                            <li><a href="#"
+                                    class="text-[16px] font-normal FF_Balsamiq text-[#666666] hover:text-black">Ecosystem</a>
+                            </li>
+                            <li><a href="#"
+                                    class="text-[16px] font-normal FF_Balsamiq text-[#666666] hover:text-black">Conclusion</a>
+                            </li>
+                            <button
+                                class="text-[16px] font-bold FF_Balsamiq text-black hover:text-white hover:bg-[#0F2440] Contact items-center justify-center text-center max-lg:flex hidden  hover-[#fff]">Contact&nbsp;Us</button>
+                        </ul>
+                        <button
+                            class="text-[16px] font-bold FF_Balsamiq text-black hover:text-white  hover:bg-[#0F2440] Contact items-center justify-center text-center max-lg:hidden flex">Contact&nbsp;Us</button>
+                        <div class="menuicon lg:hidden block z-50 cursor-pointer">
+                            <span class="bar h-[3px] block bg-black w-[25px] my-[6px] transition-all"></span>
+                            <span class="bar h-[3px] block bg-black w-[25px] my-[6px] transition-all"></span>
+                            <span class="bar h-[3px] block bg-black w-[25px] my-[6px] transition-all"></span>
+                        </div>
+                    </nav>
+                </div>
+                <div class="flex flex-wrap flex-row mx-[12px]">
+                    <div class="w-full lg:w-[58.33%]">
+                        <div class="py-[100px]">
+                            <p class="text-[50px] max-sm:text-[28px] font-normal FF_Dela text-white max-w-[599px]">
+                                Unlock the Magic of TROLLMP
+                            </p>
+                            <div class="pt-[20px]">
+                                <p class="text-[18px] font-normal FF_Balsamiq text-white max-w-[607px] opacity-70">We're
+                                    introducing TROLLMP, the most fantastic token ever created! Just like
+                                    nobody builds walls better than me, no body launches tokens like we do.
+                                </p>
+                            </div>
+                            <div class="mt-[36px]">
+                                <button
+                                    class="text-[16px] font-bold FF_Balsamiq text-black hover:text-white  hover:bg-[#0F2440] Contact flex items-center justify-center text-center">Get&nbsp;Started</button>
+                            </div>
+                            <div class="flex gap-[10px] pt-[70px]">
+                                <span>
+                                    <svg width="56" height="56" viewBox="0 0 56 56" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="28" cy="28" r="26.0981" fill="#0F2440" stroke="#FFE6F9"
+                                            stroke-width="2.19622" />
+                                        <path
+                                            d="M34.0331 18.7676H36.7272L30.8413 26.2108L37.766 36.3374H32.3442L28.0982 30.1949L23.2387 36.3374H20.5432L26.839 28.3758L20.1962 18.7684H25.7556L29.5938 24.3828L34.0331 18.7676ZM33.088 34.5539H34.5807L24.9444 20.4579H23.3427L33.088 34.5539Z"
+                                            fill="white" />
+                                    </svg>
+                                </span>
+                                <span>
+                                    <svg width="56" height="56" viewBox="0 0 56 56" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="28" cy="28" r="26.4286" fill="#0F2440" stroke="white"
+                                            stroke-width="2.85714" />
+                                        <path
+                                            d="M37.0098 18.8688C35.4264 18.1307 33.7122 17.595 31.9264 17.2855C31.9108 17.285 31.8952 17.2879 31.8808 17.2941C31.8664 17.3002 31.8535 17.3095 31.8431 17.3212C31.6288 17.714 31.3788 18.2259 31.2122 18.6188C29.3181 18.3331 27.3919 18.3331 25.4979 18.6188C25.3312 18.214 25.0812 17.714 24.855 17.3212C24.8431 17.2974 24.8074 17.2855 24.7717 17.2855C22.986 17.595 21.2836 18.1307 19.6884 18.8688C19.6764 18.8688 19.6645 18.8807 19.6526 18.8926C16.4145 23.7378 15.5217 28.4521 15.9622 33.1188C15.9622 33.1426 15.9741 33.1664 15.9979 33.1783C18.1407 34.7497 20.2003 35.7021 22.236 36.3331C22.2717 36.345 22.3074 36.3331 22.3193 36.3093C22.7955 35.6545 23.2241 34.964 23.5931 34.2378C23.6169 34.1902 23.5931 34.1426 23.5455 34.1307C22.8669 33.8688 22.2241 33.5593 21.5931 33.2021C21.5455 33.1783 21.5455 33.1069 21.5812 33.0712C21.7122 32.9759 21.8431 32.8688 21.9741 32.7736C21.9979 32.7497 22.0336 32.7497 22.0574 32.7616C26.1526 34.6307 30.5693 34.6307 34.6169 32.7616C34.6407 32.7497 34.6764 32.7497 34.7003 32.7736C34.8312 32.8807 34.9622 32.9759 35.0931 33.0831C35.1407 33.1188 35.1407 33.1902 35.0812 33.214C34.4622 33.5831 33.8074 33.8807 33.1288 34.1426C33.0812 34.1545 33.0693 34.214 33.0812 34.2497C33.4622 34.9759 33.8907 35.6664 34.355 36.3212C34.3907 36.3331 34.4264 36.345 34.4622 36.3331C36.5098 35.7021 38.5693 34.7497 40.7122 33.1783C40.736 33.1664 40.7479 33.1426 40.7479 33.1188C41.2717 27.7259 39.8788 23.0474 37.0574 18.8926C37.0455 18.8807 37.0336 18.8688 37.0098 18.8688ZM24.2122 30.2736C22.986 30.2736 21.9622 29.1426 21.9622 27.7497C21.9622 26.3569 22.9622 25.2259 24.2122 25.2259C25.4741 25.2259 26.4741 26.3688 26.4622 27.7497C26.4622 29.1426 25.4622 30.2736 24.2122 30.2736ZM32.5098 30.2736C31.2836 30.2736 30.2598 29.1426 30.2598 27.7497C30.2598 26.3569 31.2598 25.2259 32.5098 25.2259C33.7717 25.2259 34.7717 26.3688 34.7598 27.7497C34.7598 29.1426 33.7717 30.2736 32.5098 30.2736Z"
+                                            fill="white" />
+                                    </svg>
+                                </span>
+                                <span>
+                                    <svg width="56" height="56" viewBox="0 0 56 56" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="28" cy="28" r="26.0981" fill="#0F2440" stroke="#FFE6F9"
+                                            stroke-width="2.19622" />
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M36.0025 37.5584V37.556L36.0239 37.5048L39.594 19.5057V19.4486C39.594 18.9998 39.4273 18.6081 39.0678 18.3736C38.7523 18.1677 38.3893 18.1534 38.1345 18.1724C37.8974 18.1939 37.6634 18.2418 37.4369 18.3153C37.3403 18.3464 37.245 18.3814 37.1512 18.42L37.1357 18.426L17.232 26.2339L17.226 26.2363C17.1655 26.257 17.1063 26.2812 17.0487 26.3089C16.9071 26.3725 16.7713 26.4482 16.6427 26.5351C16.3868 26.7113 15.8999 27.1255 15.982 27.7827C16.0499 28.3279 16.4249 28.6731 16.6784 28.8528C16.8281 28.9577 16.989 29.0456 17.1582 29.1147L17.1963 29.1314L17.2082 29.135L17.2165 29.1385L20.6997 30.3111C20.6878 30.5289 20.7092 30.7516 20.7675 30.9718L22.5115 37.5893C22.6068 37.95 22.8126 38.2718 23.1002 38.5096C23.3877 38.7473 23.7425 38.889 24.1147 38.9147C24.4869 38.9404 24.8578 38.849 25.1754 38.6531C25.4929 38.4572 25.7411 38.1668 25.8851 37.8226L28.6088 34.9109L33.2859 38.4964L33.3526 38.525C33.7776 38.7107 34.174 38.769 34.5371 38.7202C34.9001 38.6702 35.1882 38.5178 35.4049 38.3452C35.6555 38.1421 35.8552 37.8832 35.9882 37.5893L35.9977 37.5691L36.0013 37.5619L36.0025 37.5584ZM22.4936 30.517C22.4743 30.4436 22.4789 30.3659 22.5067 30.2953C22.5346 30.2247 22.5842 30.1647 22.6484 30.1242L34.4585 22.6246C34.4585 22.6246 35.1537 22.202 35.1287 22.6246C35.1287 22.6246 35.2525 22.6984 34.8799 23.0448C34.5275 23.3745 26.4625 31.1611 25.6458 31.9491C25.6004 31.9932 25.5686 32.0494 25.5542 32.111L24.2376 37.1346L22.4936 30.517Z"
+                                            fill="white" />
+                                    </svg>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-full lg:w-[41.66%]">
+                        <img src="./dist/images/Man.group.img.png" alt="Man.group.img" class="w-full py-[100px]">
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <img src="./dist/images/sec-img.png" alt="sec-img" class="absolute sec-img-1 w-full">
+    </section>
+    <section class="relative">
+        <div class="max-w-[1280px] mx-auto px-5">
+            <div class="ld:flex-row flex flex-wrap  pb-[200px]">
+                <div class="w-full lg:w-[50%]">
+                    <img src="./dist/images/Man.img.png" alt="Man.img" class="object-contain Man-m-w w-full">
+                </div>
+                <div class="w-full lg:w-[50%]">
+                    <h1 class="text-[40px] font-normal ff_Dela text-black">About&nbsp;Us</h1>
+                    <div class="h-[213px] overflow-y-scroll">
+                        <div class="flex gap-[6px] pt-[16px]">
+                            <span><svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g opacity="0.7" clip-path="url(#clip0_101_24913)">
+                                        <path
+                                            d="M7.68225 12.2355L4.5 9.05249L5.5605 7.99199L7.68225 10.113L11.9243 5.87024L12.9855 6.93149L7.68225 12.234V12.2355Z"
+                                            fill="black" />
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M0.75 9C0.75 4.44375 4.44375 0.75 9 0.75C13.5562 0.75 17.25 4.44375 17.25 9C17.25 13.5562 13.5562 17.25 9 17.25C4.44375 17.25 0.75 13.5562 0.75 9ZM9 15.75C8.11358 15.75 7.23583 15.5754 6.41689 15.2362C5.59794 14.897 4.85382 14.3998 4.22703 13.773C3.60023 13.1462 3.10303 12.4021 2.76381 11.5831C2.42459 10.7642 2.25 9.88642 2.25 9C2.25 8.11358 2.42459 7.23583 2.76381 6.41689C3.10303 5.59794 3.60023 4.85382 4.22703 4.22703C4.85382 3.60023 5.59794 3.10303 6.41689 2.76381C7.23583 2.42459 8.11358 2.25 9 2.25C10.7902 2.25 12.5071 2.96116 13.773 4.22703C15.0388 5.4929 15.75 7.20979 15.75 9C15.75 10.7902 15.0388 12.5071 13.773 13.773C12.5071 15.0388 10.7902 15.75 9 15.75Z"
+                                            fill="black" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_101_24913">
+                                            <rect width="18" height="18" fill="white" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </span>
+                            <p
+                                class="text-[16px] font-normal ff_Balsamiq text-black opacity-70 max-w-[558px] leading-[24px]">
+                                Ladies and gentlemen, meme enthusiasts, and fellow citizens of the internet,
+                                welcome to the TROLLMP revolution! It's an honor to address you today, and let
+                                me tell you, there's never been a more exciting time to be alive. We're living
+                                in the age of memes, where laughter knows no bounds and creativity reigns supreme.
+                            </p>
+                        </div>
+                        <div class="flex gap-[6px]">
+                            <span><svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g opacity="0.7" clip-path="url(#clip0_101_24913)">
+                                        <path
+                                            d="M7.68225 12.2355L4.5 9.05249L5.5605 7.99199L7.68225 10.113L11.9243 5.87024L12.9855 6.93149L7.68225 12.234V12.2355Z"
+                                            fill="black" />
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M0.75 9C0.75 4.44375 4.44375 0.75 9 0.75C13.5562 0.75 17.25 4.44375 17.25 9C17.25 13.5562 13.5562 17.25 9 17.25C4.44375 17.25 0.75 13.5562 0.75 9ZM9 15.75C8.11358 15.75 7.23583 15.5754 6.41689 15.2362C5.59794 14.897 4.85382 14.3998 4.22703 13.773C3.60023 13.1462 3.10303 12.4021 2.76381 11.5831C2.42459 10.7642 2.25 9.88642 2.25 9C2.25 8.11358 2.42459 7.23583 2.76381 6.41689C3.10303 5.59794 3.60023 4.85382 4.22703 4.22703C4.85382 3.60023 5.59794 3.10303 6.41689 2.76381C7.23583 2.42459 8.11358 2.25 9 2.25C10.7902 2.25 12.5071 2.96116 13.773 4.22703C15.0388 5.4929 15.75 7.20979 15.75 9C15.75 10.7902 15.0388 12.5071 13.773 13.773C12.5071 15.0388 10.7902 15.75 9 15.75Z"
+                                            fill="black" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_101_24913">
+                                            <rect width="18" height="18" fill="white" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </span>
+                            <p
+                                class="text-[16px] font-normal ff_Balsamiq text-black opacity-70 max-w-[558px] leading-[24px]">
+                                Now, when it comes to memes, nobody does it better than the United States.We've
+                                got the best memes, folks, tremendous memes. From viral videos to hilarious
+                                photoshops, we've seen it all. But you know what's been missing? A meme coin
+                                that truly captures the spirit of the moment. That's where TROLLMP comes in.
+                            </p>
+                        </div>
+                        <div class="flex gap-[6px]">
+                            <span><svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g opacity="0.7" clip-path="url(#clip0_101_24913)">
+                                        <path
+                                            d="M7.68225 12.2355L4.5 9.05249L5.5605 7.99199L7.68225 10.113L11.9243 5.87024L12.9855 6.93149L7.68225 12.234V12.2355Z"
+                                            fill="black" />
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M0.75 9C0.75 4.44375 4.44375 0.75 9 0.75C13.5562 0.75 17.25 4.44375 17.25 9C17.25 13.5562 13.5562 17.25 9 17.25C4.44375 17.25 0.75 13.5562 0.75 9ZM9 15.75C8.11358 15.75 7.23583 15.5754 6.41689 15.2362C5.59794 14.897 4.85382 14.3998 4.22703 13.773C3.60023 13.1462 3.10303 12.4021 2.76381 11.5831C2.42459 10.7642 2.25 9.88642 2.25 9C2.25 8.11358 2.42459 7.23583 2.76381 6.41689C3.10303 5.59794 3.60023 4.85382 4.22703 4.22703C4.85382 3.60023 5.59794 3.10303 6.41689 2.76381C7.23583 2.42459 8.11358 2.25 9 2.25C10.7902 2.25 12.5071 2.96116 13.773 4.22703C15.0388 5.4929 15.75 7.20979 15.75 9C15.75 10.7902 15.0388 12.5071 13.773 13.773C12.5071 15.0388 10.7902 15.75 9 15.75Z"
+                                            fill="black" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_101_24913">
+                                            <rect width="18" height="18" fill="white" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </span>
+                            <p
+                                class="text-[16px] font-normal ff_Balsamiq text-black opacity-70 max-w-[558px] leading-[24px]">
+                                Ladies and gentlemen, meme enthusiasts, and fellow citizens of the internet,
+                                welcome to the TROLLMP revolution! It's an honor to address you today, and let
+                                me tell you, there's never been a more exciting time to be alive. We're living
+                                in the age of memes, where laughter knows no bounds and creativity reigns supreme.
+                            </p>
+                        </div>
+                        <div class="flex gap-[6px]">
+                            <span><svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g opacity="0.7" clip-path="url(#clip0_101_24913)">
+                                        <path
+                                            d="M7.68225 12.2355L4.5 9.05249L5.5605 7.99199L7.68225 10.113L11.9243 5.87024L12.9855 6.93149L7.68225 12.234V12.2355Z"
+                                            fill="black" />
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M0.75 9C0.75 4.44375 4.44375 0.75 9 0.75C13.5562 0.75 17.25 4.44375 17.25 9C17.25 13.5562 13.5562 17.25 9 17.25C4.44375 17.25 0.75 13.5562 0.75 9ZM9 15.75C8.11358 15.75 7.23583 15.5754 6.41689 15.2362C5.59794 14.897 4.85382 14.3998 4.22703 13.773C3.60023 13.1462 3.10303 12.4021 2.76381 11.5831C2.42459 10.7642 2.25 9.88642 2.25 9C2.25 8.11358 2.42459 7.23583 2.76381 6.41689C3.10303 5.59794 3.60023 4.85382 4.22703 4.22703C4.85382 3.60023 5.59794 3.10303 6.41689 2.76381C7.23583 2.42459 8.11358 2.25 9 2.25C10.7902 2.25 12.5071 2.96116 13.773 4.22703C15.0388 5.4929 15.75 7.20979 15.75 9C15.75 10.7902 15.0388 12.5071 13.773 13.773C12.5071 15.0388 10.7902 15.75 9 15.75Z"
+                                            fill="black" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_101_24913">
+                                            <rect width="18" height="18" fill="white" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </span>
+                            <p
+                                class="text-[16px] font-normal ff_Balsamiq text-black opacity-70 max-w-[558px] leading-[24px]">
+                                Now, when it comes to memes, nobody does it better than the United States.
+                                We've got the best memes, folks, tremendous memes. From viral videos to hilarious
+                                photoshops, we've seen it all. But you know what's been missing? A meme coin that
+                                truly captures the spirit of the moment. That's where TROLLMP comes in.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="pt-[30px]">
+                        <span><svg class="w-full" width="589" height="1" viewBox="0 0 589 1" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <line y1="0.5" x2="589" y2="0.5" stroke="#DF4741" />
+                            </svg>
+                        </span>
+                    </div>
+                    <div class="pt-[10px]">
+                        <p class="text-[16px] font-normal ff_Balsamiq text-black opacity-70">Scorll to Read More</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./dist/images/sec-img.png" alt="sec-img" class="w-full absolute sec-img-2 max-lg:hidden">
+    </section>
+    <section class="bg-[#DF4741] relative">
+        <div class="max-w-[1280px] mx-auto px-5">
+            <div class="ld:flex-row flex items-center justify-center flex-wrap py-[100px]">
+                <div class="w-full lg:w-[50%]">
+                    <img src="./dist/images/webp/circle-img.webp" alt="cirle-img"
+                        class="object-contain cirle-img-m-w w-full">
+                </div>
+                <div class="w-full lg:w-[50%]">
+                    <div class="Box_1 w-full mt-5">
+                        <h2 class="text-[40px] max-sm:text-[30px] font-normal ff_Dela text-white">Tokenomics</h2>
+                        <div class="flex items-center gap-[43px] pt-[16px]">
+                            <p class="text-[16px] font-normal ff_Balsamiq text-white">Token&nbsp;Name:</p>
+                            <p class="text-[18px] font-bold ff_Balsamiq text-white">TROLLMP</p>
+                        </div>
+                        <div class="flex items-center gap-[35px]">
+                            <p class="text-[16px] font-normal ff_Balsamiq text-white">Token&nbsp;Symbol:</p>
+                            <p class="text-[18px] font-bold ff_Balsamiq text-white">TRMP</p>
+                        </div>
+                        <div class="flex gap-[48px]">
+                            <p class="text-[16px] font-normal ff_Balsamiq text-white">Total&nbsp;Supply:</p>
+                            <p class="text-[18px] max-sm:text-[13px] font-bold ff_Balsamiq text-white max-w-[323px]">
+                                Infinite jest supply, but let's keep it real –142.53 Billion
+                            </p>
+                        </div>
+                        <div class="flex items-center gap-[4px]">
+                            <p class="text-[16px] font-normal ff_Balsamiq text-white">TRMP&nbsp;Token&nbsp;Type:</p>
+                            <p class="text-[18px] font-bold ff_Balsamiq text-white">ERC-20</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./dist/images/sec-img.png" alt="sec-img" class="w-full absolute sec-img-3 max-lg:hidden">
+    </section>
+    <section
+        class=" lg:pt-[200px] md:pt-[100px] sm:pt-[70px] pt-[50%]  lg:pb-[150px] md:pb-[100px] sm:pb-[70px] pb-[50px] relative">
+        <div class=" container mx-auto px-3 relative">
+            <div class=" flex flex-col items-center  justify-center">
+                <h1
+                    class="font-dela font-extrabold md:text-[40px] sm:text-[35px] text-[32px]  text-center text-[#000000] md:leading-[48px] sm:leading-[44px] leading-[40px] max-w-[235px]">
+                    UTILITY
+                </h1>
+                <p
+                    class="font-bals max-w-[728px] text-center font-normal text-[#000000] pt-4 md:text-[16px] text-[14px]  md:leading-[24px] leading-[20px] opacity-70">
+                    Now, you might be wondering, what can I do with TROLLMP? Well, let me tell you,
+                    the possibilities are endless! You can use TROLLMP to vote on your favorite memes,
+                    tip your favorite creators, or even trade them on the open market. It's freedom,
+                    folks, freedom like you've never seen before!
+                </p>
+                <div class="lg:pt-[70px] md:pt-[50px] pt-[30px]">
+                    <div class="relative flex  sm:gap-[30px] gap-[20px] lg:pb-[43px] md:pb-[30px] pb-[19px]">
+                        <div
+                            class=" before:absolute before:left-[12px] before:top-6 top-[11px] left-[4px] before:h-full before:w-2 before:bg-[#DF4741]">
+                            <img src="./dist/images/svg/circle-svg.svg" alt="circle-svg">
+                        </div>
+                        <div class="flex flex-col">
+                            <p
+                                class="font-bals pt-2 font-bold md:text-[18px] text-[16px] text-[#000000] leading-[21px]">
+                                Voting Rights
+                            </p>
+                            <p
+                                class="max-w-[655px] font-bals font-normal md:text-[16px] text-[14px] pt-2 text-[#000000] opacity-70 md:leading-[24px] leading-[20px]">
+                                Holders of TROLLMP will have the opportunity to participate in governance
+                                proposals, enabling them to vote on key decisions related to the development
+                                and direction of the TROLLMP ecosystem.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="relative flex sm:gap-[30px] gap-[20px] pb-[19px">
+                        <div
+                            class=" before:absolute before:left-[12px] before:top-6 before:h-full before:w-2 before:bg-[#DF4741]">
+                            <img src="./dist/images/svg/circle-svg.svg" alt="circle-svg">
+                        </div>
+                        <div class="flex flex-col">
+                            <p
+                                class="font-bals pt-2 font-bold md:text-[18px] text-[16px] text-[#000000] leading-[21px]">
+                                Meme Creation Rewards
+                            </p>
+                            <p
+                                class="max-w-[655px] font-bals font-normal md:text-[16px] text-[14px] pt-2 text-[#000000] opacity-70 md:leading-[24px] leading-[20px]">
+                                TROLLMP holders will be eligible to receive rewards for creating and sharing high-quality
+                                 memes within the TROLLMP community, encouraging active participation and engagement.
+                            </p>
+                        </div>
+                    </div>
+                    <div class=" relative flex sm:gap-[30px] gap-[20px] lg:pb-[43px] md:pb-[30px] pb-[19px]">
+                        <div
+                            class=" :before:absolute before:left-[12px]  before:top-6 before:h-full before:w-2 before:bg-[#DF4741]">
+                            <img src="./dist/images/svg/circle-svg.svg" alt="circle-svg">
+                        </div>
+                        <div class=" flex flex-col">
+                            <p
+                                class=" font-bals pt-2 max-w-[240px] font-bold md:text-[18px] text-[16px] text-[#000000] leading-[21px]">
+                                Access to Platform Features
+                            </p>
+                            <p
+                                class="max-w-[655px] font-bals font-normal md:text-[16px] text-[14px] pt-2 text-[#000000] opacity-70 md:leading-[24px] leading-[20px]">
+                                TROLLMP will unlock exclusive features and privileges within the TROLLMP platform,
+                                such as access to premium content, special events, and enhanced voting capabilities.
+                            </p>
+                        </div>
+                    </div>
+                    <div class=" relative flex sm:gap-[30px] gap-[20px]">
+                        <div class="">
+                            <img src="./dist/images/svg/circle-svg.svg" alt="circle-svg">
+                        </div>
+                        <div class=" flex flex-col">
+                            <p
+                                class=" font-bals pt-2 font-bold md:text-[18px] text-[16px] text-[#000000] leading-[21px]">
+                                Liquidity Provision
+                            </p>
+                            <p
+                                class=" max-w-[655px] font-bals font-normal md:text-[16px] text-[14px] pt-2 text-[#000000] opacity-70 md:leading-[24px] leading-[20px]">
+                                TROLLMP holders can contribute to liquidity pools on decentralized exchanges,
+                                facilitating trading and liquidity provision for the TROLLMP token.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class=" 2xl:flex hidden absolute top-[-8%] right-[4%] -z-10">
+                <img src="./dist/images/sec-4-man-img-1.png" alt="sec-4-man-img-1">
+            </div>
+            <div class="2xl:flex hidden absolute left-[3%] bottom-[-5%] -z-10">
+                <img src="./dist/images/sec-4-man-img.png" alt="sec-4-man-img">
+            </div>
+        </div>
+        <div
+            class=" 2xl:hidden sm:flex hidden absolute xl:opacity-100 opacity-40 md:top-[8%] top-[6%] xl:right-[1%] right-0 -z-10">
+            <img src="./dist/images/sec-4-man-img-1.png" alt="sec-4-man-img-1"
+                class=" xl:max-w-[306px] md:max-w-[280px] max-w-[180px] w-full" />
+        </div>
+        <div
+            class="2xl:hidden sm:flex hidden xl:opacity-100 opacity-40 absolute xl:left-[1%] left-0 lg:bottom-[12%] bottom-[3%] -z-10">
+            <img src="./dist/images/sec-4-man-img.png" alt="sec-4-man-img"
+                class="xl:max-w-[306px] md:max-w-[280px] max-w-[180px] w-full" />
+        </div>
+    </section>
+    <section>
+        <img src="./dist/images/webp/toplayer-1.webp" alt="toplayer-1" class=" z-10 w-full -mb-2" />
+        <div class=" bg-[#0F2440]">
+            <div class="container mx-auto px-3 relative pb-[310px] md:pb-[170px] lg::pb-[250px]">
+                <h2
+                    class="text-center font-dela font-normal text-[28px] md:text-[34px] lg:text-[40px] leading-[40px] text-white lg:leading-[48px]">
+                    Roadmap
+                </h2>
+                <div class=" pt-[48px] md:pt-[80px] lg:pt-[137px] pb-[20px] lg:pb-[40px] xl:pb-[75px]">
+                    <div
+                        class=" max-sm:max-w-[360px] max-md:max-w-[500px] max-md:mx-auto relative before:absolute before:inset-0 before:ml-5 max-sm:before:ml-0 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-[97%] before:w-[4px] lg:before:w-[6px] before:bg-gradient-to-b before:from-transparent before:bg-white   ">
+                        <div
+                            class="relative flex  justify-between md:justify-normal md:even:flex-row-reverse group is-active">
+                            <div
+                                class="flex relative ju stify-center w-[30px] sm:w-[50px] lg:w-[75px] h-[30px] sm:h-[50px] lg:h-[75px] bg-[#DF4741] border-white border-[3px] border-dashed rounded-full  bg-dark_red    shrink-0 md:order-1 max-sm:translate-x-[-15px] max-md:translate-x-[-5px]  translate-x-[25%] lg:translate-x-0  items-center">
+                                <img src="./dist/images/svg/Arrow-right.svg" alt="Arrow-right"
+                                    class=" -z-30  absolute max-sm:left-[10px] max-md:left-[15px] min-w-[80px]  md:min-w-[110px] lg:min-w-[150px] xl:min-w-[200px]" />
+                                <div class=" bg-white w-[15px] lg:w-[24px] h-[15px] lg:h-[24px] rounded-full"></div>
+                            </div>
+                            <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)]">
+                                <div class="flex flex-col md:items-end max-sm:ps-[50px] max-md:ps-[80px] md:pe-[133px]">
+                                    <h4
+                                        class=" font-dela font-normal text-[22px] lg:text-[26px] leading-[22px] lg:leading-[37px] text-white">
+                                        <span class="ps-1">Phase 1</span> <span
+                                            class=" block text-[16px] lg:text-[22px] leading-[25px] lg:leading-[31px]">
+                                            Q1-Q2 (2024)
+                                        </span>
+                                    </h4>
+                                </div>
+                            </div>
+                            <div
+                                class=" absolute shadow-[8px_8px_0px_0px_#DF4741] hover:shadow-[8px_8px_0px_0px_#ffffff] duration-300 ease-linear  max-md:top-[85px] max-sm:left-[35px] max-md:left-[145px]  !right-2 top-[-67px] max-sm:max-w-[275px] sm:max-w-[290px] lg:max-w-[382px] p-5 lg:p-[29px] w-full rounded-[10px] border-[2px]  border-[#FFFFFF29] flex flex-col gap-2 lg:gap-3">
+                                <h3
+                                    class=" text-white font-dela font-normal text-[20px] lg:text-[26px] leading-[22px] lg:leading-[37px] pt-[3px]">
+                                    Launchpad Ignition
+                                </h3>
+                                <div class=" flex items-start gap-[10px] pt-[3px]">
+                                    <img src="./dist/images/svg/check-circle.svg" alt="check-circle" />
+                                    <p
+                                        class=" text-white font-Balsamiq font-normal text-[14px] lg:text-xl leading-[20px] lg:leading-6">
+                                        Create TROLLMP on Ethereum.
+                                    </p>
+                                </div>
+                                <div class=" flex items-start gap-[10px]">
+                                    <img src="./dist/images/svg/check-circle.svg" alt="check-circle" />
+                                    <p
+                                        class=" text-white font-Balsamiq font-normal text-[14px] lg:text-xl leading-[20px] lg:leading-6">
+                                        Build a strong community.
+                                    </p>
+                                </div>
+                                <div class=" flex items-start gap-[10px]">
+                                    <img src="./dist/images/svg/check-circle.svg" alt="check-circle" />
+                                    <p
+                                        class=" text-white font-Balsamiq font-normal text-[14px] lg:text-xl leading-[20px] lg:leading-6">
+                                        Conduct a Spacedrop event.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="relative z-30 flex !mt-[250px] md:!mt-[150px] lg:!mt-[214px]  justify-between md:justify-normal md:even:flex-row-reverse group is-active">
+                            <div
+                                class="flex rel z-30 justify-center w-[30px] sm:w-[50px] lg:w-[75px] h-[30px] sm:h-[50px] lg:h-[75px] bg-[#DF4741] border-white border-[3px] border-dashed rounded-full  bg-dark_red max-sm:translate-x-[-15px] max-md:translate-x-[-5px]  translate-x-[-25%] lg:translate-x-0     shrink-0 md:order-1   items-center">
+                                <div class=" bg-white w-[15px] lg:w-[24px] h-[15px] lg:h-[24px] rounded-full"></div>
+                                <img src="./dist/images/svg/Arrow-right.svg" alt="Arrow-right"
+                                    class="md:hidden absolute max-sm:left-[10px] max-md:left-[15px] min-w-[80px]  md:min-w-[110px] lg:min-w-[150px] xl:min-w-[200px]" />
+                                <img src="./dist/images/svg/Arrow-left.svg" alt="Arrow-left"
+                                    class="max-md:hidden absolute max-sm:left-[10px] min-w-[80px] sm:min-w-[100px] md:min-w-[110px] lg:min-w-[150px] xl:min-w-[200px]" />
+                            </div>
+                            <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)]">
+                                <div class="flex flex-col max-sm:ps-[50px] ps-[80px] md:ps-[133px]">
+                                    <h4
+                                        class=" font-dela font-normal text-[22px] lg:text-[26px] leading-[22px] lg:leading-[37px] text-white">
+                                        <span class="ps-1">Phase 2</span>
+                                        <span
+                                            class=" block text-[16px] lg:text-[22px] leading-[25px] lg:leading-[31px]">
+                                            Q3- Q4 (2024)
+                                        </span>
+                                    </h4>
+                                </div>
+                            </div>
+                            <div
+                                class=" duration-300 ease-linear shadow-[8px_8px_0px_0px_#DF4741] hover:shadow-[8px_8px_0px_0px_#ffffff]  absolute max-md:top-[85px]  max-sm:left-[35px] max-md:left-[145px] left-0 top-[-67px] max-sm:max-w-[275px] sm:max-w-[290px] lg:max-w-[382px] p-5 lg:p-[29px] w-full rounded-[10px] border-[2px]  border-[#FFFFFF29] flex flex-col gap-2 lg:gap-3">
+                                <h3
+                                    class="text-white font-dela font-normal text-[20px] lg:text-[26px] leading-[22px] lg:leading-[37px]">
+                                    Lunar Liftoff
+                                </h3>
+                                <div class=" flex items-start pt-[3px] gap-[10px]">
+                                    <img src="./dist/images/svg/check-circle.svg" alt="check-circle" />
+                                    <p
+                                        class=" text-white font-Balsamiq font-normal text-[14px] lg:text-xl leading-[20px] lg:leading-6">
+                                        List on exchanges.
+                                    </p>
+                                </div>
+                                <div class=" flex items-start gap-[10px]">
+                                    <img src="./dist/images/svg/check-circle.svg" alt="check-circle" />
+                                    <p
+                                        class=" text-white font-Balsamiq font-normal text-[14px] lg:text-xl leading-[20px] lg:leading-6">
+                                        Establish liquidity pools.
+                                    </p>
+                                </div>
+                                <div class=" flex items-start gap-[10px]">
+                                    <img src="./dist/images/svg/check-circle.svg" alt="check-circle" />
+                                    <p
+                                        class=" text-white font-Balsamiq font-normal text-[14px] lg:text-xl leading-[20px] lg:leading-6">
+                                        Launch a marketing campaign.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="relative flex !mt-[250px] md:!mt-[150px] lg:!mt-[214px]  justify-between md:justify-normal md:even:flex-row-reverse group is-active">
+                            <div
+                                class="flex relative z-30 justify-center w-[30px] sm:w-[50px] lg:w-[75px] h-[30px] sm:h-[50px] lg:h-[75px] border-white border-[3px] border-dashed rounded-full  bg-dark_red  bg-[#DF4741]  shrink-0 md:order-1 max-sm:translate-x-[-15px] max-md:translate-x-[-5px]  translate-x-[25%] lg:translate-x-0  items-center">
+                                <div class=" bg-white w-[15px] lg:w-[24px] h-[15px] lg:h-[24px] rounded-full"></div>
+                                <img src="./dist/images/svg/Arrow-right.svg" alt="Arrow-right"
+                                    class=" absolute max-sm:left-[10px] max-md:left-[15px] min-w-[80px]  md:min-w-[110px] lg:min-w-[150px] xl:min-w-[200px]" />
+                            </div>
+                            <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)]">
+                                <div class="flex flex-col md:items-end max-sm:ps-[50px] max-md:ps-[80px] md:pe-[133px]">
+                                    <h4
+                                        class=" font-dela font-normal text-[22px] lg:text-[26px] leading-[22px] lg:leading-[37px] text-white">
+                                        <span class='ps-1'>Phase 3</span> <span
+                                            class=" block text-[16px] lg:text-[22px] leading-[25px] lg:leading-[31px]">
+                                            Q1- Q2 (2025)
+                                        </span>
+                                    </h4>
+                                </div>
+                            </div>
+                            <div
+                                class=" duration-300 ease-linear shadow-[8px_8px_0px_0px_#DF4741] hover:shadow-[8px_8px_0px_0px_#ffffff]  absolute max-md:top-[85px] max-sm:left-[35px] max-md:left-[145px]  !right-2 top-[-67px] max-sm:max-w-[275px] sm:max-w-[290px] lg:max-w-[382px] p-5 lg:p-[29px] w-full rounded-[10px] border-[2px]  border-[#FFFFFF29] flex flex-col gap-2 lg:gap-3">
+                                <h3
+                                    class=" text-white font-dela font-normal text-[20px] lg:text-[26px] leading-[22px] lg:leading-[37px]">
+                                    Galactic Expansion
+                                </h3>
+                                <div class=" flex items-start gap-[10px] pt-[3px]">
+                                    <img src="./dist/images/svg/check-circle.svg" alt="check-circle" />
+                                    <p
+                                        class=" text-white font-Balsamiq font-normal text-[14px] lg:text-xl leading-[20px] lg:leading-6">
+                                        Form partnerships.
+                                    </p>
+                                </div>
+                                <div class=" flex items-start gap-[10px]">
+                                    <img src="./dist/images/svg/check-circle.svg" alt="check-circle" />
+                                    <p
+                                        class=" text-white font-Balsamiq font-normal text-[14px] lg:text-xl leading-[20px] lg:leading-6">
+                                        Grow the community.
+                                    </p>
+                                </div>
+                                <div class=" flex items-start gap-[10px]">
+                                    <img src="./dist/images/svg/check-circle.svg" alt="check-circle" />
+                                    <p
+                                        class=" text-white font-Balsamiq font-normal text-[14px] lg:text-xl leading-[20px] lg:leading-6">
+                                        Enhance platform features.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="relative flex !mt-[250px] md:!mt-[150px] lg:!mt-[214px]  justify-between md:justify-normal md:even:flex-row-reverse group is-active">
+                            <div
+                                class="flex relative z-30 justify-center w-[30px] sm:w-[50px] lg:w-[75px] h-[30px] sm:h-[50px] lg:h-[75px] bg-[#DF4741] border-white border-[3px] border-dashed rounded-full  bg-dark_red  max-sm:translate-x-[-15px] max-md:translate-x-[-5px] translate-x-[-25%] lg:translate-x-0     shrink-0 md:order-1   items-center">
+                                <div class=" bg-white w-[15px] lg:w-[24px] h-[15px] lg:h-[24px] rounded-full"></div>
+                                <img src="./dist/images/svg/Arrow-right.svg" alt="Arrow-right"
+                                    class="md:hidden absolute max-sm:left-[10px] max-md:left-[15px] min-w-[80px]  md:min-w-[110px] lg:min-w-[200px]" />
+                                <img src="./dist/images/svg/Arrow-left.svg" alt="Arrow-left"
+                                    class="max-md:hidden absolute max-sm:left-[20px] min-w-[80px] sm:min-w-[100px] md:min-w-[110px] lg:min-w-[150px] xl:min-w-[200px]" />
+                            </div>
+                            <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)]">
+                                <div class="flex flex-col max-sm:ps-[50px] ps-[80px] md:ps-[133px]">
+                                    <h4
+                                        class="font-dela font-normal text-[22px] lg:text-[26px] leading-[22px] lg:leading-[37px] text-white">
+                                        <span class="ps-1">Phase 4</span> <span
+                                            class=" block text-[16px] lg:text-[22px] leading-[25px] lg:leading-[31px]">
+                                            Q3- Q4 (2025)
+                                        </span>
+                                    </h4>
+                                </div>
+                            </div>
+                            <div
+                                class=" duration-300 ease-linear shadow-[8px_8px_0px_0px_#DF4741] hover:shadow-[8px_8px_0px_0px_#ffffff]  absolute max-md:top-[85px]  max-sm:left-[35px] max-md:left-[145px] left-0 top-[-67px] max-sm:max-w-[275px] sm:max-w-[290px] lg:max-w-[382px] p-5 lg:p-[29px] w-full rounded-[10px] border-[2px]  border-[#FFFFFF29] flex flex-col gap-2 lg:gap-3">
+                                <h3
+                                    class=" text-white font-dela font-normal text-[20px] lg:text-[26px] leading-[22px] lg:leading-[37px]">
+                                    Cosmic Domination
+                                </h3>
+                                <div class=" flex pt-[3px] items-start gap-[10px]">
+                                    <img src="./dist/images/svg/check-circle.svg" alt="check-circle" />
+                                    <p
+                                        class=" text-white font-Balsamiq font-normal text-[14px] lg:text-xl leading-[20px] lg:leading-6">
+                                        Explore cross-chainmigration.
+                                    </p>
+                                </div>
+                                <div class=" flex items-start gap-[10px]">
+                                    <img src="./dist/images/svg/check-circle.svg" alt="check-circle" />
+                                    <p
+                                        class=" text-white font-Balsamiq font-normal text-[14px] lg:text-xl leading-[20px] lg:leading-6">
+                                        Focus on global adoption.
+                                    </p>
+                                </div>
+                                <div class=" flex items-start gap-[10px]">
+                                    <img src="./dist/images/svg/check-circle.svg" alt="check-circle" />
+                                    <p
+                                        class=" text-white font-Balsamiq font-normal text-[14px] lg:text-xl leading-[20px] lg:leading-6">
+                                        Establish a decentralized governance structure.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="relative flex !mt-[250px] md:!mt-[150px] lg:!mt-[214px]  justify-between md:justify-normal md:even:flex-row-reverse group is-active">
+                            <div
+                                class="flex relative z-30 justify-center w-[30px] sm:w-[50px] lg:w-[75px] h-[30px] sm:h-[50px] lg:h-[75px] bg-[#DF4741] border-white border-[3px] border-dashed rounded-full  bg-dark_red    shrink-0 md:order-1 max-sm:translate-x-[-15px] max-md:translate-x-[-5px] translate-x-[25%] lg:translate-x-0  items-center">
+                                <div class=" bg-white w-[15px] lg:w-[24px] h-[15px] lg:h-[24px] rounded-full"></div>
+                                <img src="./dist/images/svg/Arrow-right.svg" alt="Arrow-right"
+                                    class=" absolute max-sm:left-[10px] max-md:left-[15px] min-w-[80px]  md:min-w-[110px] lg:min-w-[150px] xl:min-w-[200px]" />
+                            </div>
+                            <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)]">
+                                <div class="flex flex-col md:items-end max-sm:ps-[50px] max-md:ps-[80px] md:pe-[133px]">
+                                    <h4
+                                        class=" font-dela font-normal text-[16px] lg:text-[26px] leading-[25px] lg:leading-[37px] text-white">
+                                        <span class="ps-1">Phase 5</span> <span
+                                            class=" block lg:text-[22px] lg:leading-[31px]">2026 and Beyond</span>
+                                    </h4>
+                                </div>
+                            </div>
+                            <div
+                                class=" duration-300 ease-linear shadow-[8px_8px_0px_0px_#DF4741] hover:shadow-[8px_8px_0px_0px_#ffffff]  absolute max-md:top-[85px] max-sm:left-[35px] max-md:left-[145px]  !right-2 top-[-67px] max-sm:max-w-[260px] sm:max-w-[290px] lg:max-w-[382px] p-5 lg:p-[29px] w-full rounded-[10px] border-[2px]  border-[#FFFFFF29] flex flex-col gap-2 lg:gap-3">
+                                <h3
+                                    class="text-white font-dela font-normal text-[20px] lg:text-[26px] leading-[22px] lg:leading-[37px]">
+                                    Beyond theStars
+                                </h3>
+                                <div class="flex items-start gap-[10px] pt-[3px]">
+                                    <img src="./dist/images/svg/Arrow-right.svg" alt="Arrow-right" />
+                                    <p
+                                        class="text-white font-Balsamiq font-normal text-[14px] lg:text-xl leading-[20px] lg:leading-6">
+                                        Form partnerships.
+                                    </p>
+                                </div>
+                                <div class="flex items-start gap-[10px]">
+                                    <img src="./dist/images/svg/check-circle.svg" alt="check-circle" />
+                                    <p
+                                        class="text-white font-Balsamiq font-normal text-[14px] lg:text-xl leading-[20px] lg:leading-6">
+                                        Drive further innovation.
+                                    </p>
+                                </div>
+                                <div class=" flex items-start gap-[10px]">
+                                    <img src="./dist/images/svg/check-circle.svg" alt="check-circle" />
+                                    <p
+                                        class="text-white font-Balsamiq font-normal text-[14px] lg:text-xl leading-[20px] lg:leading-6">
+                                        Host a galactic celebration.
+                                    </p>
+                                </div>
+                                <div class=" flex items-start gap-[10px]">
+                                    <img src="./dist/images/svg/check-circle.svg" alt="check-circle" />
+                                    <p
+                                        class="text-white font-Balsamiq font-normal text-[14px] lg:text-xl leading-[20px] lg:leading-6">
+                                        Secure TROLLMP's enduring legacy.
+                                    </p>
+                                </div>
+                                <div class="flex items-start gap-[10px]">
+                                    <img src="./dist/images/svg/check-circle.svg" alt="check-circle" />
+                                    <p
+                                        class="text-white font-Balsamiq font-normal text-[14px] lg:text-xl leading-[20px] lg:leading-6">
+                                        Enhance platform features.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./dist/images/webp/bottom_blue_layer.webp" alt="bottom-blue-layer" class=" z-10 w-full -mt-1" />
+    </section>
+    <section class="py-24 bg-white">
+        <div class="container mx-auto px-3 py-3 my-11">
+            <div class="flex flex-col items-center justify-center">
+                <h2 class="text-center font-sans2 font-[400] text-[40px] text-black">Ecosystem</h2>
+                <p class=" text-center max-w-[728px] font-sans font-normal pt-4 leading-6 text-[16px]">
+                    In the TROLLMP ecosystem, everyone's a winner! From our dedicated meme creators to our
+                    passionate community members, we're building a platform where everyone can come together to
+                    laugh, meme, and vote. And let me tell you, folks,it's going to be tremendous!
+                </p>
+            </div>
+            <div class="sm:pt-7 pt-4 flex flex-wrap -mx-3 flex-row">
+                <div class=" flex justify-center px-5 mt-10 lg:w-1/2 w-full">
+                    <div
+                        class=" flex border-[#0F244029] h-full border-4 relative shadow-[8px_8px_0px_0px_#0F2440] hover:shadow-[8px_8px_0px_0px_#DF4741] duration-300 ease-linear sm:py-[21px]  rounded-[20px] sm:pr-[30px] lg:pl-1  flex-col sm:flex-row p-3 justify-around">
+                        <img src="./dist/images/webp/man-img-0.webp" alt="man-img-0" class="w-fit h-[170px] " />
+                        <div class=" w-full mt-2">
+                            <p class="font-bold sm:text-[20px] text-[18px] font-sans pt-px">
+                                Partnerships and Integrations
+                            </p>
+                            <p class="mt-2 font-Balsamiq font-normal opacity-70 text-black text-[16px]">
+                                TROLLMP will actively pursue partnerships and integrations with other projects and
+                                platforms in the meme coin space, expanding its reach andutility within the broader
+                                crypto community.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex justify-center px-5 mt-10 lg:w-1/2 w-full">
+                    <div
+                        class="flex border-[#0F244029] h-full border-4 relative shadow-[8px_8px_0px_0px_#0F2440] hover:shadow-[8px_8px_0px_0px_#DF4741]  duration-300 ease-linear rounded-[20px] sm:pr-[30px] lg:pl-1  flex-col sm:flex-row p-3 justify-around ">
+                        <img src="./dist/images/webp/man-img-1.webp" alt="man-img-1"
+                            class="w-fit h-[170px] pr-[40px] " />
+                        <div class=" w-full  mt-2 ">
+                            <p class=" font-bold sm:text-[20px] text-[18px] font-sans pt-px p">
+                                Community Development
+                            </p>
+                            <p class="mt-2 font-Balsamiq font-normal opacity-70 text-black text-[16px]">
+                                Resources will be allocated towards community development initiatives, including
+                                educational programs, hackathons, and developer grants, to foster innovation and
+                                engagement within the TROLLMP community
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex justify-center px-5 mt-10 lg:w-1/2 w-full">
+                    <div
+                        class="flex border-[#0F244029] h-full border-4 relative shadow-[8px_8px_0px_0px_#0F2440] hover:shadow-[8px_8px_0px_0px_#DF4741] duration-300 ease-linear  w-full  rounded-[20px] sm:pr-[30px] lg:pl-1  flex-col sm:flex-row p-3 justify-around">
+                        <img src="./dist/images/webp/man-img-2.webp" alt="man-img-2" class="w-fit h-[170px" />
+                        <div class=" w-full  mt-2 ">
+                            <p class="font-bold sm:text-[20px] text-[18px] font-sans pt-px">
+                                Continuous Improvement
+                            </p>
+                            <p class="mt-2 font-Balsamiq font-normal opacity-70 text-black text-[16px]">
+                                The TROLLMP team is committed to continuous improvement and will allocate resources
+                                towards research, development, and optimization of the TROLLMP platform to ensure its
+                                long-term success and sustainability
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex justify-center px-5 mt-10 lg:w-1/2 w-full">
+                    <div
+                        class="flex border-[#0F244029] h-full border-4 relative shadow-[8px_8px_0px_0px_#0F2440] hover:shadow-[8px_8px_0px_0px_#DF4741] duration-300 ease-linear w-full  rounded-[20px] sm:pr-[30px] lg:pl-1  flex-col sm:flex-row p-3 justify-around">
+                        <img src="./dist/images/webp/man-img-3.webp" alt="man-img-3" class="w-fit h-40 pr-[27px]" />
+                        <div class=" w-full mt-3">
+                            <p class=" font-bold sm:text-[20px] text-[18px] font-sans pt-px">
+                                Expansion into New Markets
+                            </p>
+                            <p class="mt-3 font-Balsamiq font-normal text-[16px] opacity-70 text-black">
+                                Funds will be invested in expanding the presence of TROLLMP in new markets and
+                                demographics, driving adoption and awareness of the token among meme enthusiasts
+                                worldwide.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-Conclusion min-h-[590px] flex items-center relative z-[1]">
+        <div class="container mx-auto px-4 py-3 my-11">
+            <div class="flex flex-col items-center justify-center">
+                <h2 class="text-center font-sans2 font-[400] text-[40px] text-white">Conclusion</h2>
+                <p
+                    class=" text-center  font-sans font-normal pt-4 leading-6 max-w-[783px] text-white sm:text-[16px] text-[14px]">
+                    In conclusion, TROLLMP is more than just a token. It's a movement, a revolution, a testament to
+                    the power of memes. So join us, fellow meme enthusiasts, as we embark on this incredible
+                    journey together. Together, we'll make memes great again!
+                </p>
+                <p
+                    class=" text-center  font-sans font-normal pt-4 leading-6 max-w-[783px] text-white sm:text-[16px] text-[14px]">
+                    Remember, nobody memes like we do. Nobody launches tokens like we do. Because at TROLLMP,
+                    we're not just making memes, we're making history!
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="bg-[#0F2440] mt-[-170px] relative pt-28 ">
+        <div class="container mx-auto px-3 pt-28 my-11">
+            <div class="flex flex-col items-center">
+                <img src="./dist/images/Page.Logo.png" alt="Page.Logo">
+                <h6 class="text-[16px] text-white max-w-[659px] pt-[16px] font-normal">
+                    In this tremendous whitepaper, we're introducing TROLLMP, the most fantastic token ever
+                    created! Just like nobody builds walls better than me, no body launches tokens like we do!
+                </h6>
+                <div class="flex gap-[16px] pt-[34px]">
+                    <a href="https://x.com/?lang=en" target="_blank"
+                        class="border-[3px] border-white bg-[#DF4741] rounded-full duration-300 ease-linear  hover:bg-slate-800 hover:border-[3DF4741] hover:scale-[0.8] hover:border-[#df4741]">
+                        <img src="./dist/images/svg/vector.svg" alt="vector" class="h-[50px] p-[12px]">
+                    </a>
+                    <a href="https://discord.com/" target="_blank"
+                        class="border-[3px] border-white bg-[#DF4741] rounded-full duration-300 ease-linear  hover:bg-slate-800 hover:border-[3DF4741] hover:scale-[0.8] hover:border-[#df4741]">
+                        <img src="./dist/images/svg/discord.svg" alt="discord" class="h-[50px] p-[12px]">
+                    </a>
+                    <a href="https://desktop.telegram.org/" target="_blank"
+                        class="border-[3px] border-white bg-[#DF4741] rounded-full duration-300 ease-linear hover:bg-slate-800 hover:border-[3DF4741] hover:scale-[0.8] hover:border-[#df4741]">
+                        <img src="./dist/images/svg/telegram.svg" alt="telegram" class="h-[50px] p-[12px]">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="border-2 bg-[#3F5066]  mt-[96px] opacity-60 w-full">
+        </div>
+        <h6 class="font-sans font-medium text-white justify-center flex py-5">copyright@2024 all right reserved</h6>
+    </section>
+    <script src="./dist/js/app.js"></script>
+</body>
+
+</html>
